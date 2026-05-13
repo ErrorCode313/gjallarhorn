@@ -1,0 +1,5 @@
+lib/
+tsconfig.tsbuildinfo
+obs-bridge.config.json
+.obs-bridge-cache/
+node_modules/

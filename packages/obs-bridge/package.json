@@ -1,0 +1,33 @@
+{
+  "name": "@bmg-esports/gjallarhorn-obs-bridge",
+  "version": "0.0.0",
+  "description": "Bridge that turns Gjallarhorn's JSON output into a TSH-compatible folder tree so OBS scenes can consume it.",
+  "private": true,
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "launchers"
+  ],
+  "bin": {
+    "obs-bridge": "lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w",
+    "clean": "rimraf lib tsconfig.tsbuildinfo",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BMG-Esports/gjallarhorn.git"
+  },
+  "dependencies": {
+    "commander": "^9.1.0",
+    "socket.io-client": "^4.6.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.4"
+  }
+}

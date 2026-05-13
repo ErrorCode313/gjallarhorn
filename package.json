@@ -5,7 +5,8 @@
   "workspaces": [
     "packages/tokens",
     "packages/core",
-    "packages/cli"
+    "packages/cli",
+    "packages/obs-bridge"
   ],
   "main": "packages/cli/lib/index.js",
   "bin": {
